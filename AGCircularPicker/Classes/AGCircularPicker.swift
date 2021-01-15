@@ -56,7 +56,7 @@ open class AGCircularPicker: UIView {
         let cView = UICollectionView(frame: self.bounds, collectionViewLayout: self.collectionLayout)
         cView.backgroundColor = UIColor.clear
         cView.showsHorizontalScrollIndicator = false
-        cView.decelerationRate = UIScrollViewDecelerationRateFast
+        cView.decelerationRate = .fast
         cView.register(AGCircularPickerCell.self, forCellWithReuseIdentifier: "cell")
         cView.delegate = self
         cView.dataSource = self
